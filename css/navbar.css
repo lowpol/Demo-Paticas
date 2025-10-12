@@ -1,0 +1,104 @@
+/*NAVBAR FORMA DE MOSTRAR EN MOVIL*/
+.navbar {
+    background-color: var(--verde-pasto);
+    color: var(--blanco);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--blanco);
+}
+
+/* icono del menu */
+.navbar-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    color: var(--blanco);
+    user-select: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu li a {
+    color: var(--blanco);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-menu li a:hover,
+.navbar-menu li a.active {
+    color: var(--verde-oscuro);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        background-color: var(--verde-oscuro);
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 25px 0;
+        display: none;
+        border-radius: 0 0 12px 12px;
+        opacity: 0;
+        transform: translateY(-15px);
+        transition: all 0.3s ease;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .navbar-menu li a {
+        font-size: 1.2rem;
+        color: var(--blanco);          /* color siempre visible */
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        transition: color 0.3s, transform 0.2s;
+    }
+
+    .navbar-menu li a:hover {
+        color: #c8f7c5;                /* un tono verde claro bonito al pasar el mouse */
+        transform: scale(1.05);
+    }
+
+     /* animacion de aparicion */
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-15px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

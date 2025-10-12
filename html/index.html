@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paticas Andantes</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/hero.css">
+    <link rel="stylesheet" href="../css/principal.css">
+
+</head>
+<body>
+
+    <!--  NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- nombre -->
+            <div class="navbar-logo">Paticas Andantes</div>
+
+            <!-- Botón hamburguesa para movil -->
+            <div class="navbar-toggle" id="navbar-toggle">
+                ☰
+            </div>
+
+            <!-- Enlaces del menu -->
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="veterinarios.html">Clínica</a></li>
+                <li><a href="medicamentos.html">Medicamentos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <img src="../img/perritos.jpg" alt="Perritos felices" class="hero-img">
+        <div class="hero-text">
+            <h1>Paticas Andantes</h1>
+            <p>Cuidamos a tus mejores amigos</p>
+        </div>
+    </section>
+
+    <!-- SECCION VETERINARIOS -->
+    <section class="veterinarios">
+        <h2>Nuestros Veterinarios</h2>
+
+        <!-- Vet 1 -->
+        <div class="vet-card">
+            <img src="../img/veterinarios/vet1.jpg" alt="Veterinario 1">
+            <div class="vet-info">
+                <h3>Dr. Luis Ernesto Márquez Rodríguez</h3>
+                <p>Médico veterinario formado en la Escuela de Medicina Veterinaria Carlos III, con experiencia de 5 años en salud animal y manejo de animales de producción.</p>
+            </div>
+        </div>
+
+        <!-- Vet 2 -->
+        <div class="vet-card reverse">
+            <img src="../img/veterinarios/vet2.jpg" alt="Veterinario 2">
+            <div class="vet-info">
+                <h3>Dra. Ana Beltrán Cruz</h3>
+                <p>Veterinaria titulada por la Universidad de La Habana, especialista en cirugía y odontología veterinaria con 6 años de experiencia en clínica de pequeños animales.</p>
+            </div>
+        </div>
+
+        <!-- Enlace a vet -->
+        <div class="ver-mas">
+            <a href="veterinarios.html">Ver todo nuestro equipo →</a>
+        </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section class="servicios">
+        <h2>Nuestros Servicios</h2>
+
+        <!-- Lista de servicios -->
+        <div class="servicios-container">
+            <div class="servicio-card">
+                <img src="../img/iconos/Vacunacion.png" alt="Vacunación" class="icono-servicio">
+                <h3>Vacunación</h3>
+                <p>Aplicamos las vacunas necesarias para mantener la salud y protección de tus mascotas frente a enfermedades comunes.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="../img/iconos/Desparasitacion.png" alt="Desparasitacion" class="icono-servicio">
+                <h3>Desparasitación</h3>
+                <p>Eliminamos y prevenimos parásitos internos y externos con tratamientos seguros y efectivos.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="../img/iconos/Analisis.png" alt="Analisis" class="icono-servicio">
+                <h3>Análisis</h3>
+                <p>Realizamos diversos análisis como de heces o extracción de sangre.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="../img/iconos/Oido.png" alt="Limpieza de oido" class="icono-servicio">
+                <h3>Lavado Ótico</h3>
+                <p>Mantenemos una buena higiene ótica para prevenir enfermedades en el animal.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="../img/iconos/Corte de unas.png" alt="Corte de unas" class="icono-servicio">
+                <h3>Corte de Uñas</h3>
+                <p>Servicio de corte de uñas profesional para evitar molestias o heridas en tus mascotas.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="../img/iconos/Limpieza Dental.png" alt="Limpieza" class="icono-servicio">
+                <h3>Limpieza Dental</h3>
+                <p>Mantenemos una buena higiene bucal para prevenir el mal aliento y enfermedades dentales.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="../img/iconos/Microchip.png" alt="Microchip" class="icono-servicio">
+                <h3>Implantación de Microchip</h3>
+                <p>Identificamos a tu mascota de forma segura mediante microchip certificado.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="../img/iconos/Medicamentos.png" alt="Medicamentos" class="icono-servicio">
+                <h3>Venta de Medicamentos</h3>
+                <p>Disponemos de medicamentos veterinarios de alta calidad para el cuidado de la salud animal.</p>
+            </div>
+        </div>
+    </section>    
+
+        <!-- SECCION DE MEDICAMENTOS -->
+    <section class="medicamentos">
+        <h2>Medicamentos a la Venta</h2>
+        <p>
+            Ofrecemos medicamentos veterinarios de distintas marcas y precios para el cuidado integral de tu mascota. 
+            Encuentra productos para perros, gatos y animales domésticos de todo tipo.
+        </p>
+
+        <!--  Carrusel -->
+        <div class="carrusel-3d">
+            <img src="../img/medicamentos/Analgesico/Analgesico 1.png" alt="Medicamento 1" class="active">
+            <img src="../img/medicamentos/Antinflamatorio/Antinflamatorio.png" alt="Medicamento 2">
+            <img src="../img/medicamentos/Antiparasitario/Antiparasitario.png" alt="Medicamento 3">
+            <img src="../img/medicamentos/Shampoo/Shampoo.png" alt="Medicamento 4">
+            <img src="../img/medicamentos/ComplementoA/Complemento Alimenticio Miel.jpg" alt="Medicamento 5">
+            <img src="../img/medicamentos/Antibiotico/Antibiotico4.png" alt="Medicamento 6">
+            <img src="../img/medicamentos/Oftalmico/Oftalmico.png" alt="Medicamento 7">
+            <img src="../img/medicamentos/Oftalmico/Oftalmico6.png" alt="Medicamento 8">
+        </div>
+
+        <!-- Boton -->
+        <div class="boton-medicamentos">
+            <a href="medicamentos.html" class="btn-ver-medicamentos">Ver Medicamentos →</a>
+        </div>
+    </section>
+
+        <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- INFO de contacto -->
+            <div class="footer-info">
+                <h3>Patitas Andantes</h3>
+
+                <!--  Iconos con info -->
+                <div class="footer-item">
+                    <img src="../img/iconos/ubicacion.png" alt="Ubicación" class="footer-icon">
+                    <p>Calle 15, esquina 12, Vedado, La Habana, Cuba</p>
+                </div>
+
+                <div class="footer-item">
+                    <img src="../img/iconos/telefono.png" alt="Teléfono" class="footer-icon">
+                    <p>+53 7 123 4567</p>
+                </div>
+
+                <div class="footer-item">
+                    <img src="../img/iconos/horario.png" alt="Horario" class="footer-icon">
+                    <p>Lunes a Domingo — 8:00 AM a 6:00 PM</p>
+                </div>
+            </div>
+
+            <!--  redes sociales -->
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_switchxx_?igsh=Y2M5MXF0ZGtlZW90" aria-label="Facebook">
+                        <img src="../img/iconos/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/mazzebeats?igsh=ZHdtYXVsbmxkbjg4" aria-label="Instagram">
+                        <img src="../img/iconos/instagram.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            <p>© 2025 Patitas Andantes — Todos los derechos reservados </p>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/carrusel.js"></script>
+</body>
+</html>
+

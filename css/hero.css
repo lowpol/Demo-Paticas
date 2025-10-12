@@ -1,0 +1,67 @@
+/*PRESENTACION O HERO FOTO DE PERROS*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* ocupa 80% de la altura de la pantalla */
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* la imagen se ajusta al tamaño del contenedor */
+    filter: brightness(80%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--blanco);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 25px 40px;
+    border-radius: 15px;
+    animation: fadeInText 1.5s ease;
+}
+
+/* animacion suave del texto */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-text {
+        padding: 15px 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}

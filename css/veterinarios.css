@@ -1,0 +1,326 @@
+
+/* SECCION SOBRE LA CLiNICA */
+
+.clinica {
+    background-color: #f3fff3; /*verde suave */
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clinica-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /*permite apilar en móvil */
+    gap: 40px;
+}
+
+.clinica-texto {
+    flex: 1 1 50%;
+    order: 2;
+    text-align: left;
+}
+
+.clinica-texto img.icono {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 8px;
+    filter: brightness(0.4) sepia(1) hue-rotate(65deg) saturate(3); /*tono verdoso */
+}
+
+.clinica-texto h2 {             /*titulo de la info de a clinica*/
+    color: #54a754;
+    font-size: 2rem;
+    margin: 0 0 12px;           
+    display: inline-block;      
+    position: relative;
+    line-height: 1.1;
+    padding: 0 10px;
+    text-align: center; 
+    width: 100%;
+}
+
+.clinica-texto h2::after {
+    content: "";
+    display: block;
+    width: min(60%, 360px);     
+    height: 4px;
+    background-color: #6fc36f;
+    margin: 8px auto 0;         /*centra la barra horizontalmente */
+    border-radius: 4px;
+}
+
+.clinica-texto p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.clinica-texto i {
+    color: #54a754; /*iconos visibles sobre fondo claro */
+    margin-right: 8px;
+}
+
+/*  IMAGENES */
+.clinica-imagen {
+    flex: 1 1 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    order: 1;
+}
+
+.clinica-imagen img {       /*transform la imagen*/
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+/* primera imagen */
+.clinica-imagen img:first-child {
+    transform: rotate(-3deg);
+}
+
+/* segunda imagen */
+.clinica-imagen img:last-child {
+    transform: rotate(3deg);
+}
+
+/*hover con efecto suave */
+.clinica-imagen img:hover {
+    transform: scale(1.03);
+}
+
+
+/* SECCION: NUESTROS VALORES */
+.valores {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #f3fff3;
+}
+
+.valores h2 {
+    color: #54a754;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.valores-linea {
+    width: 80px;
+    height: 4px;
+    background-color: #6fc36f;
+    margin: 0 auto 40px auto;
+    border-radius: 5px;
+}
+
+.valores-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.valor-card {               /*hacer las tarjetas*/
+    background-color: white;
+    border: 2px solid #8cd88c;
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.valor-card img {       /*controlar iconos*/
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.valor-card h3 {
+    color: #54a754;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.valor-card p {
+    font-size: 0.95rem;
+}
+
+/* SECCION NUESTRO EQUIPO */
+.veterinarios {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.veterinarios h2 {
+    color: #54a754;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.linea-verde {
+    width: 80px;
+    height: 4px;
+    background-color: #6fc36f;
+    margin: 0 auto 50px auto;
+    border-radius: 5px;
+}
+
+/* cada veterinario  */
+.veterinario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.veterinario.invertido {
+    flex-direction: row-reverse;
+}
+
+.veterinario img {      /*controlar tamano de la imagen y darle estilo*/
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 5px solid #8cd88c;
+    background-color: #e6ffe6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.veterinario .info {
+    flex: 1 1 400px;
+    text-align: left;
+}
+
+.veterinario .info h3 {
+    color: #4fa74f;
+    margin-bottom: 5px;
+}
+
+.veterinario .especialidad {
+    color: #6fc36f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.veterinario .info p {
+    line-height: 1.6;
+}
+
+/* IMAGEN FINAL FUSION FOOTER  */
+.bloque-final {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Iimagen superior */
+.bloque-final .imagen-final {
+    position: relative;
+    height: 440px;      /* altura aumentada para mostrar las mascotas pequenas */
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bloque-final .imagen-final img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;    /* se centra hacia arriba */
+    display: block;
+}
+
+/* degradado superior */
+.bloque-final .imagen-final::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(to bottom, #f3fff3 0%, rgba(243, 255, 243, 0) 100%);
+}
+
+/* degradado inferior */
+.bloque-final .imagen-final::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(to bottom, rgba(247, 255, 247, 0), #66C22D 100%);
+}
+
+/* Footer dentro del mismo bloque */
+.bloque-final footer {
+    background-color: #66C22D;  /*color igual al fondo de la imagen */
+    color: white;
+    text-align: center;
+    padding: 40px 0 20px 0;
+    margin: 0;
+    z-index: 2;
+}
+
+/* RESPONSIVE  */
+@media (max-width: 768px) {
+    .clinica-contenedor {
+        flex-direction: column-reverse; /* texto arriba, imágenes abajo */
+        text-align: center;
+    } 
+
+    .clinica-imagen {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .clinica-texto h2 {
+        font-size: 1.6rem;
+    }
+
+    .clinica-texto h2::after {
+        width: min(70%, 260px);
+        height: 4px;
+        margin-top: 6px;
+    }
+
+    .clinica-imagen img {
+        width: 85%;   /*grandes tambien en cel */
+        max-width: 400px;
+    }
+
+    .veterinario {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .veterinario.invertido {
+        flex-direction: column;
+    }
+
+    .veterinario .info {
+        text-align: center;
+    }
+
+    .bloque-final .imagen-final { 
+        height: 320px; 
+    }
+
+    .bloque-final .imagen-final::after { 
+        bottom: -80px; height: 220px; 
+    }
+}
