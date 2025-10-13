@@ -12,106 +12,109 @@
 
 </head>
 <body>
-    <!--  NAVBAR -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <!--  nombre -->
-            <div class="navbar-logo">Paticas Andantes</div>
+    <header>
+        <!--  NAVBAR -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- nombre -->
+                <div class="navbar-logo">Paticas Andantes</div>
 
-            <!-- BotOn  para movil -->
-            <div class="navbar-toggle" id="navbar-toggle">
-                ☰
+                <!-- Botón hamburguesa para movil -->
+                <div class="navbar-toggle" id="navbar-toggle">
+                    ☰
+                </div>
+
+                <!-- Enlaces del menu -->
+                <ul class="navbar-menu" id="navbar-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="veterinarios.html">Clínica</a></li>
+                    <li><a href="medicamentos.html" class="active">Medicamentos</a></li>
+                </ul>
             </div>
+        </nav>
+    </header>
 
-            <!-- Enlaces del menu -->
-            <ul class="navbar-menu" id="navbar-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="veterinarios.html">Clínica</a></li>
-                <li><a href="medicamentos.html" class = "active">Medicamentos</a></li>
-            </ul>
-        </div>
-    </nav>
-
-
-  <!--  ENCABEZADO PRINCIPAL HERO  -->
-    <section class="hero-medicamentos">
-        <img src="../img/medicamentos/medicamentos.jpg" alt="Medicamentos veterinarios" class="hero-img">
-        <div class="hero-overlay">
-            <h1>Nuestros Medicamentos</h1>
-            <p>Cuidamos la salud de tus mascotas con productos de confianza y calidad.</p>
-        </div>
-    </section>
-
-    <!--  SECCION TITULO CATALOGO -->
-    <section class="catalogo-section">
-        <h2 class="seccion-titulo">Catálogo de Medicamentos</h2>
-    </section>
-
-    <!-- MENU DESPLEGABLE DE FILTROS -->
-    <section class="filtros">
-        <label for="filtro-tipo">Filtrar por tipo:</label>
-        <select id="filtro-tipo">  <!--sin tildes para no confundir-->
-            <option value="Todos">Todos los medicamentos</option>
-            <option value="Analgesico">Analgésico</option>
-            <option value="Antibiotico">Antibiótico</option>
-            <option value="Antidiarreico">Antidiarreico</option>
-            <option value="Antiemetico">Antiemético</option>
-            <option value="Antimicotico">Antimicótico</option>
-            <option value="Antimicrobiano">Antimicrobiano</option>
-            <option value="Antiinflamatorio">Antiinflamatorio</option>
-            <option value="Antiparasitario">Antiparasitario</option>
-            <option value="Antipulgas">Antipulgas</option>
-            <option value="Antiseptico">Antiséptico</option>
-            <option value="Complemento Alimenticio">Complemento Alimenticio</option>
-            <option value="Dermatologico">Dermatológico</option>
-            <option value="Hepatoprotector">Hepatoprotector</option>
-            <option value="Oftalmico">Oftálmico</option>
-            <option value="Shampoo">Shampoo</option>
-            <option value="Vacuna">Vacuna</option>
-            <option value="Vitaminico">Vitamínico</option>
-        </select>
-    </section>
-
-    <!-- CATALOGO DE MEDICAMENTOS -->
-    <section class="productos" id="productos-container">
-        <!-- JS IMPORTA LOS MEDICAMENTOS -->
-    </section>
-
-    <!-- AVISO DE RESPONSABILIDAD -->
-    <section class="aviso-responsabilidad">
-        <div class="aviso-contenido">
-            <img src="../img/iconos/alerta.png" alt="Advertencia" class="icono-aviso">
-            <p>
-                Los medicamentos mostrados son de uso veterinario.<br>
-                <strong>Patitas Andantes</strong> no se hace responsable del uso sin supervisión profesional.
-            </p>
-        </div>
-    </section>
-
-    <!--  SECCION DE CONSEJOS -->
-    <section class="consejos">
-        <h2 class="seccion-titulo">Consejos Útiles</h2>
-
-        <div class="consejos-grid">
-            <div class="consejo">
-                <img src="../img/iconos/consulta.png" alt="Consulta profesional">
-                <h3>Consulta profesional</h3>
-                <p>No administres medicamentos sin la dosis recomendada por un veterinario.</p>
+    <main>
+        <!--  ENCABEZADO PRINCIPAL HERO  -->
+        <section class="hero-medicamentos">
+            <img src="../img/medicamentos/medicamentos.jpg" alt="Medicamentos veterinarios" class="hero-img">
+            <div class="hero-overlay">
+                <h1>Nuestros Medicamentos</h1>
+                <p>Cuidamos la salud de tus mascotas con productos de confianza y calidad.</p>
             </div>
+        </section>
 
-            <div class="consejo">
-                <img src="../img/iconos/conservacion.png" alt="Conservación adecuada">
-                <h3>Conservación adecuada</h3>
-                <p>Guarda los medicamentos en lugares frescos, secos y fuera del alcance de los niños.</p>
-            </div>
+        <!--  SECCION TITULO CATALOGO -->
+        <section class="catalogo-section">
+            <h2 class="seccion-titulo">Catálogo de Medicamentos</h2>
+        </section>
 
-            <div class="consejo">
-                <img src="../img/iconos/tratamiento.png" alt="Cumple los tratamientos">
-                <h3>Cumple los tratamientos</h3>
-                <p>No suspendas la medicación antes del tiempo indicado por el especialista.</p>
+        <!-- MENU DESPLEGABLE DE FILTROS -->
+        <section class="filtros">
+            <label for="filtro-tipo">Filtrar por tipo:</label>
+            <select id="filtro-tipo">  <!--sin tildes para no confundir-->
+                <option value="Todos">Todos los medicamentos</option>
+                <option value="Analgesico">Analgésico</option>
+                <option value="Antibiotico">Antibiótico</option>
+                <option value="Antidiarreico">Antidiarreico</option>
+                <option value="Antiemetico">Antiemético</option>
+                <option value="Antimicotico">Antimicótico</option>
+                <option value="Antimicrobiano">Antimicrobiano</option>
+                <option value="Antiinflamatorio">Antiinflamatorio</option>
+                <option value="Antiparasitario">Antiparasitario</option>
+                <option value="Antipulgas">Antipulgas</option>
+                <option value="Antiseptico">Antiséptico</option>
+                <option value="Complemento Alimenticio">Complemento Alimenticio</option>
+                <option value="Dermatologico">Dermatológico</option>
+                <option value="Hepatoprotector">Hepatoprotector</option>
+                <option value="Oftalmico">Oftálmico</option>
+                <option value="Shampoo">Shampoo</option>
+                <option value="Vacuna">Vacuna</option>
+                <option value="Vitaminico">Vitamínico</option>
+            </select>
+        </section>
+
+        <!-- CATALOGO DE MEDICAMENTOS -->
+        <section class="productos" id="productos-container">
+            <!-- JS IMPORTA LOS MEDICAMENTOS -->
+        </section>
+
+        <!-- AVISO DE RESPONSABILIDAD -->
+        <section class="aviso-responsabilidad">
+            <div class="aviso-contenido">
+                <img src="../img/iconos/alerta.png" alt="Advertencia" class="icono-aviso">
+                <p>
+                    Los medicamentos mostrados son de uso veterinario.<br>
+                    <strong>Patitas Andantes</strong> no se hace responsable del uso sin supervisión profesional.
+                </p>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!--  SECCION DE CONSEJOS -->
+        <section class="consejos">
+            <h2 class="seccion-titulo">Consejos Útiles</h2>
+
+            <div class="consejos-grid">
+                <div class="consejo">
+                    <img src="../img/iconos/consulta.png" alt="Consulta profesional">
+                    <h3>Consulta profesional</h3>
+                    <p>No administres medicamentos sin la dosis recomendada por un veterinario.</p>
+                </div>
+
+                <div class="consejo">
+                    <img src="../img/iconos/conservacion.png" alt="Conservación adecuada">
+                    <h3>Conservación adecuada</h3>
+                    <p>Guarda los medicamentos en lugares frescos, secos y fuera del alcance de los niños.</p>
+                </div>
+
+                <div class="consejo">
+                    <img src="../img/iconos/tratamiento.png" alt="Cumple los tratamientos">
+                    <h3>Cumple los tratamientos</h3>
+                    <p>No suspendas la medicación antes del tiempo indicado por el especialista.</p>
+                </div>
+            </div>
+        </section>
+    </main>
   
     
     <!-- FOOTER -->

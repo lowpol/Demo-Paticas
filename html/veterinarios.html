@@ -12,134 +12,139 @@
 </head>
 
 <body>
-    <!--  NAVBAR -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <!-- nombre -->
-            <div class="navbar-logo">Paticas Andantes</div>
+    <header>
+        <!--  NAVBAR -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- nombre -->
+                <div class="navbar-logo">Paticas Andantes</div>
 
-            <!-- Boton hamburguesa para movil -->
-            <div class="navbar-toggle" id="navbar-toggle">
-                ☰
+                <!-- Botón hamburguesa para movil -->
+                <div class="navbar-toggle" id="navbar-toggle">
+                    ☰
+                </div>
+
+                <!-- Enlaces del menu -->
+                <ul class="navbar-menu" id="navbar-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="veterinarios.html" class="active">Clínica</a></li>
+                    <li><a href="medicamentos.html">Medicamentos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>     
+        <!-- INFO  -->
+        <!-- SECCION SOBRE LA CLINICA -->
+        <section class="clinica">
+            <div class="clinica-contenedor">
+            <div class="clinica-imagen">
+                <img src="../img/clinica.jpg" alt="Clínica Veterinaria Patitas Andantes">
+                <img src="../img/clinica2.jpeg" alt="Instalaciones de la clínica">
+            </div>
+            <div class="clinica-texto">
+                <h2>Sobre Nuestra Clínica</h2>
+                <p>Desde su fundación en el año 2015, <strong>Patitas Andantes</strong> se ha dedicado al cuidado integral de mascotas, combinando tecnología moderna con un enfoque humano y sensible. Nuestra misión es ofrecer servicios veterinarios de calidad que promuevan la salud, el bienestar y la felicidad de cada animal.</p>
+                <p>Contamos con instalaciones amplias, área de cirugía, laboratorio clínico, diagnóstico y tienda especializada. Brindamos atención personalizada de <strong>lunes a viernes</strong> para garantizar el bienestar de nuestros pacientes peludos.</p>
+                <p><img src="../img/iconos/ubicacion.png" class="icono" alt=""> Calle 12 #45, La Habana, Vedado, Cuba</p>
+                <p><img src="../img/iconos/telefono.png" class="icono" alt=""> +53 7 123 4567</p>
+            </div> 
+            </div>
+        </section>
+
+        <!-- SECCION DE NUESTROS VALORES -->
+        <section class="valores">
+            <h2>Nuestros Valores</h2>
+            <div class="valores-linea"></div>
+
+            <div class="valores-container">
+                <div class="valor-card">
+                    <img src="../img/iconos/amor.png" alt="Amor por los animales">
+                    <h3>Amor por los animales</h3>
+                    <p>Creemos que cada mascota merece respeto, cariño y atención. Nuestro equipo trabaja guiado por la empatía y el compromiso con la vida animal.</p>
+                </div>
+
+                <div class="valor-card">
+                    <img src="../img/iconos/ciencia.png" alt="Ciencia y tecnología">
+                    <h3>Ciencia y Tecnología</h3>
+                    <p>Aplicamos técnicas modernas, equipos actualizados y formación continua para ofrecer diagnósticos y tratamientos precisos.</p>
+                </div>
+
+                <div class="valor-card">
+                    <img src="../img/iconos/comunidad.png" alt="Compromiso con la comunidad">
+                    <h3>Compromiso con la comunidad</h3>
+                    <p>Participamos en campañas de esterilización y rescate, fomentando la tenencia responsable y el respeto hacia todos los animales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIoN DE NUESTRO EQUIPO -->
+        <section class="veterinarios">
+            <h2>Nuestro Equipo</h2>
+            <div class="linea-verde"></div>
+
+            <!-- VET 1 -->
+            <div class="veterinario">
+                <img src="../img/veterinarios/vet1.jpg" alt="Dr. Luis Ernesto Márquez Rodríguez">
+                <div class="info">
+                    <h3>Dr. Luis Ernesto Márquez Rodríguez</h3>
+                    <p class="especialidad">Especialidad: Medicina general y manejo de animales de producción</p>
+                    <p>Médico veterinario formado en la Escuela de Medicina Veterinaria <em>Carlos III</em>, con más de 5 años de experiencia en salud animal y manejo de animales de producción. Combina conocimientos técnicos con vocación por el bienestar animal, brindando atención integral y responsable.</p>
+                </div>
             </div>
 
-            <!-- Enlaces del menu -->
-            <ul class="navbar-menu" id="navbar-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="veterinarios.html" class = "active">Clínica</a></li>
-                <li><a href="medicamentos.html">Medicamentos</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- INFO  -->
-     <!-- SECCION SOBRE LA CLINICA -->
-    <section class="clinica">
-        <div class="clinica-contenedor">
-          <div class="clinica-imagen">
-              <img src="../img/clinica.jpg" alt="Clínica Veterinaria Patitas Andantes">
-              <img src="../img/clinica2.jpeg" alt="Instalaciones de la clínica">
-          </div>
-          <div class="clinica-texto">
-              <h2>Sobre Nuestra Clínica</h2>
-              <p>Desde su fundación en el año 2015, <strong>Patitas Andantes</strong> se ha dedicado al cuidado integral de mascotas, combinando tecnología moderna con un enfoque humano y sensible. Nuestra misión es ofrecer servicios veterinarios de calidad que promuevan la salud, el bienestar y la felicidad de cada animal.</p>
-              <p>Contamos con instalaciones amplias, área de cirugía, laboratorio clínico, diagnóstico y tienda especializada. Brindamos atención personalizada de <strong>lunes a viernes</strong> para garantizar el bienestar de nuestros pacientes peludos.</p>
-              <p><img src="../img/iconos/ubicacion.png" class="icono" alt=""> Calle 12 #45, La Habana, Vedado, Cuba</p>
-              <p><img src="../img/iconos/telefono.png" class="icono" alt=""> +53 7 123 4567</p>
-          </div> 
-        </div>
-    </section>
-
-    <!-- SECCION DE NUESTROS VALORES -->
-    <section class="valores">
-        <h2>Nuestros Valores</h2>
-        <div class="valores-linea"></div>
-
-        <div class="valores-container">
-            <div class="valor-card">
-                <img src="../img/iconos/amor.png" alt="Amor por los animales">
-                <h3>Amor por los animales</h3>
-                <p>Creemos que cada mascota merece respeto, cariño y atención. Nuestro equipo trabaja guiado por la empatía y el compromiso con la vida animal.</p>
+            <!-- VET 2 -->
+            <div class="veterinario invertido">
+                <img src="../img/veterinarios/vet2.jpg" alt="Dra. Ana Beltrán Cruz">
+                <div class="info">
+                    <h3>Dra. Ana Beltrán Cruz</h3>
+                    <p class="especialidad">Especialidad: Cirugía y odontología veterinaria</p>
+                    <p>Veterinaria titulada por la <em>Universidad de La Habana</em>, especialista en cirugía y odontología veterinaria con 6 años de experiencia en clínica de pequeños animales. Reconocida por su precisión y empatía en cada intervención.</p>
+                </div>
             </div>
 
-            <div class="valor-card">
-                <img src="../img/iconos/ciencia.png" alt="Ciencia y tecnología">
-                <h3>Ciencia y Tecnología</h3>
-                <p>Aplicamos técnicas modernas, equipos actualizados y formación continua para ofrecer diagnósticos y tratamientos precisos.</p>
+            <!-- VET 3 -->
+            <div class="veterinario">
+                <img src="../img/veterinarios/vet3.png" alt="Dra. Camila Torres Pérez">
+                <div class="info">
+                    <h3>Dra. Camila Torres Pérez</h3>
+                    <p class="especialidad">Especialidad: Reproducción y neonatología animal</p>
+                    <p>Con más de 7 años de experiencia, la Dra. Torres se dedica al control reproductivo, gestación y cuidado neonatal de perros y gatos. Promueve la salud materna y el bienestar de las crías.</p>
+                </div>
             </div>
 
-            <div class="valor-card">
-                <img src="../img/iconos/comunidad.png" alt="Compromiso con la comunidad">
-                <h3>Compromiso con la comunidad</h3>
-                <p>Participamos en campañas de esterilización y rescate, fomentando la tenencia responsable y el respeto hacia todos los animales.</p>
+            <!-- VET 4 -->
+            <div class="veterinario invertido">
+                <img src="../img/veterinarios/vet5.png" alt="Dr. Adrián Gutiérrez López">
+                <div class="info">
+                    <h3>Dr. Adrián Gutiérrez López</h3>
+                    <p class="especialidad">Especialidad: Medicina preventiva y vacunación animal</p>
+                    <p>Profesional con 8 años de experiencia en prevención de enfermedades infecciosas y campañas de vacunación. Destaca por su enfoque educativo con los propietarios y su pasión por la salud pública veterinaria.</p>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- SECCIoN DE NUESTRO EQUIPO -->
-    <section class="veterinarios">
-        <h2>Nuestro Equipo</h2>
-        <div class="linea-verde"></div>
-
-        <!-- VET 1 -->
-        <div class="veterinario">
-            <img src="../img/veterinarios/vet1.jpg" alt="Dr. Luis Ernesto Márquez Rodríguez">
-            <div class="info">
-                <h3>Dr. Luis Ernesto Márquez Rodríguez</h3>
-                <p class="especialidad">Especialidad: Medicina general y manejo de animales de producción</p>
-                <p>Médico veterinario formado en la Escuela de Medicina Veterinaria <em>Carlos III</em>, con más de 5 años de experiencia en salud animal y manejo de animales de producción. Combina conocimientos técnicos con vocación por el bienestar animal, brindando atención integral y responsable.</p>
+            <!-- VET 5 -->
+            <div class="veterinario">
+                <img src="../img/veterinarios/vet4.jpg" alt="Dra. Sofía Morales Domínguez">
+                <div class="info">
+                    <h3>Dra. Sofía Morales Domínguez</h3>
+                    <p class="especialidad">Especialidad: Nutrición y bienestar animal</p>
+                    <p>Especialista en alimentación balanceada y control de peso en animales domésticos. Diseña planes de nutrición que promueven la vitalidad, longevidad y felicidad de cada mascota.</p>
+                </div>
             </div>
-        </div>
+        </section>
+    </main>    
 
-        <!-- VET 2 -->
-        <div class="veterinario invertido">
-            <img src="../img/veterinarios/vet2.jpg" alt="Dra. Ana Beltrán Cruz">
-            <div class="info">
-                <h3>Dra. Ana Beltrán Cruz</h3>
-                <p class="especialidad">Especialidad: Cirugía y odontología veterinaria</p>
-                <p>Veterinaria titulada por la <em>Universidad de La Habana</em>, especialista en cirugía y odontología veterinaria con 6 años de experiencia en clínica de pequeños animales. Reconocida por su precisión y empatía en cada intervención.</p>
-            </div>
-        </div>
-
-        <!-- VET 3 -->
-        <div class="veterinario">
-            <img src="../img/veterinarios/vet3.png" alt="Dra. Camila Torres Pérez">
-            <div class="info">
-                <h3>Dra. Camila Torres Pérez</h3>
-                <p class="especialidad">Especialidad: Reproducción y neonatología animal</p>
-                <p>Con más de 7 años de experiencia, la Dra. Torres se dedica al control reproductivo, gestación y cuidado neonatal de perros y gatos. Promueve la salud materna y el bienestar de las crías.</p>
-            </div>
-        </div>
-
-        <!-- VET 4 -->
-        <div class="veterinario invertido">
-            <img src="../img/veterinarios/vet5.png" alt="Dr. Adrián Gutiérrez López">
-            <div class="info">
-                <h3>Dr. Adrián Gutiérrez López</h3>
-                <p class="especialidad">Especialidad: Medicina preventiva y vacunación animal</p>
-                <p>Profesional con 8 años de experiencia en prevención de enfermedades infecciosas y campañas de vacunación. Destaca por su enfoque educativo con los propietarios y su pasión por la salud pública veterinaria.</p>
-            </div>
-        </div>
-
-        <!-- VET 5 -->
-        <div class="veterinario">
-            <img src="../img/veterinarios/vet4.jpg" alt="Dra. Sofía Morales Domínguez">
-            <div class="info">
-                <h3>Dra. Sofía Morales Domínguez</h3>
-                <p class="especialidad">Especialidad: Nutrición y bienestar animal</p>
-                <p>Especialista en alimentación balanceada y control de peso en animales domésticos. Diseña planes de nutrición que promueven la vitalidad, longevidad y felicidad de cada mascota.</p>
-            </div>
-        </div>
-    </section>
 
     <!-- IMAGEN FINAL ANTES DEL FOOTER -->
     <section class="bloque-final">
-      <div class="imagen-final"> 
-        <img src="../img/banner.jpg" alt="Mascotas felices">
-      </div>
-
+        <div class="imagen-final"> 
+            <img src="../img/banner.jpg" alt="Mascotas felices">
+        </div>
+    
       <!-- FOOTER -->
-      <footer class="footer-vet">
+        <footer class="footer-vet">
           <div class="footer-container">
               <!-- INFO de contacto -->
               <div class="footer-info">
